@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <parameter name="firstname" value="Haswitha" >
+</parameter>  
+<parameter name="address" value="Ramapuram" >
+</parameter>    
+<parameter name="city" value="chennai" >
+</parameter>    
+  <parameter name="state" value="Tamilnadu" >
+</parameter>    
+  <parameter name="zipcode" value="600089" >
+</parameter>    
+  <parameter name="ccnumber" value="1234567887654321" >
+</parameter>    
+  <parameter name="nameofcard" value="Haswitha" >
+</parameter>    
+  
+  <test name="Test">
+   
+    <classes>
+  
+      <class name="org.dftestng.DBlaze2"/>
+      <class name="org.dftestng.DBlaze1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

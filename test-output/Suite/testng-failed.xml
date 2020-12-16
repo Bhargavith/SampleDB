@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <parameter name="a" value="10"/>
+  <parameter name="b" value="20"/>
+  <test name="Test(failed)" parallel="classes">
+    <parameter name="a" value="10"/>
+    <parameter name="b" value="20"/>
+    <groups>
+      <run>
+        <include name="parallel"/>
+        <exclude name="@retest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.dftestng.Practice">
+        <methods>
+          <include name="tc1"/>
+        </methods>
+      </class> <!-- org.dftestng.Practice -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
